@@ -1,5 +1,7 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
 import Options from "./options";
+import { Carousell } from "./carousel";
+
 export default function Content() {
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -38,24 +40,18 @@ export default function Content() {
              <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                <li className="flex gap-x-3">
-                  <Options title="Sub service 1" content="hello" />
-                </li>
-                <li className="flex gap-x-3">
-                  <Options title="Sub service 1" content="hello" />
-                </li>
-                <li className="flex gap-x-3">
-                  <Options title="Sub service 1" content="hello" />
-                </li>
-                <li className="flex gap-x-3">
-                  <Options title="Sub service 1" content="hello" />
-                </li>
+                
               </ul>
             </div>
           </div>
         </div>
       </div>
-      
+      <div className="flex items-center justify-center flex-col">
+      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
+                
+              </h1>
+      <Carousell />
+      </div>
     </div>
   );
 }
