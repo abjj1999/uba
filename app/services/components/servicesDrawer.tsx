@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Minus, MoreVertical, Plus } from "lucide-react";
 // import { Bar, BarChart, ResponsiveContainer } from "recharts"
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -15,7 +16,13 @@ import {
 } from "@/components/ui/drawer";
 
 
-export function DrawerDemo() {
+interface DrawerProps {
+  desc: String;
+  service: String;
+
+}
+
+export const  DrawerDemo: React.FC<DrawerProps> =({desc, service}) => {
 //   const [goal, setGoal] = React.useState(350);
 
   
@@ -28,16 +35,22 @@ export function DrawerDemo() {
         </Button>
       </DrawerTrigger>
       <DrawerContent>
-        <div className="mx-auto w-full max-w-sm">
+        <div className="mx-auto w-full max-w-xl">
           <DrawerHeader>
-            <DrawerTitle>Move Goal</DrawerTitle>
+            <DrawerTitle>{service}</DrawerTitle>
             <DrawerDescription>Set your daily activity goal.</DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0">
-            <div className="flex items-center justify-center space-x-2"></div>
+          <div className="p-4 pb-1">
+            <div className="space-x-5">
+              <p className="text-lg font-medium ">
+                {desc}
+              </p>
+            </div>
           </div>
           <DrawerFooter>
-            <Button>Submit</Button>
+            <Link className="" href="/services/service1">
+              <Button className="w-full" variant="default">Learn More</Button>
+            </Link>
             <DrawerClose asChild>
               <Button variant="outline">Cancel</Button>
             </DrawerClose>

@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <div className="bg-gray-900 lg:pt-4">
+        <div className="bg-gray-900 ">
       <AdvancedNavbar />
         {children}
         <Footer />

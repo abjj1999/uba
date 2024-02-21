@@ -30,7 +30,7 @@ const Reachout = () => {
           </p>
           <Separator />
           <p className="my-4 font-semibold text-gray-300">
-            Our fill out our contact form and we will get back to you as soon as
+             Fill out our contact form and we will get back to you as soon as
             possible.
           </p>
 

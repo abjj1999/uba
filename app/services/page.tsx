@@ -1,3 +1,4 @@
+import Reachout from "@/components/Reachout";
 import Header from "./components/Header";
 import ServicesList from "./components/servicesList";
 
@@ -6,6 +7,7 @@ const ServicesPage = () => {
         <div>
             <Header />
             <ServicesList />
+            <Reachout />
         </div>
      );
 }
