@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogPage = () => {
+const FeaturePage = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-gray-900">
       <div className="text-center">
@@ -13,4 +13,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default FeaturePage;

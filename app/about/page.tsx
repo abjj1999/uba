@@ -4,7 +4,7 @@ import Team from "./components/team";
 
 const AboutPage = () => {
     return ( 
-        <div>
+        <div className="">
             <About1 />
             <Team />
             <Reachout />

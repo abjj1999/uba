@@ -148,11 +148,11 @@ const AboutUsContent = () => {
         <div>
           <h2 className="mb-2 text-xl font-semibold text-white">About us</h2>
           <p className="mb-6 max-w-xs text-sm text-neutral-400">
-            Placeholder is the world's leading placeholder company.
+            Placeholder is the world&apos;s leading placeholder company.
           </p>
         </div>
         <Link
-          href="#"
+          href="/about"
           className="flex items-center gap-1 text-xs text-indigo-300 hover:underline"
         >
           Learn more <FiArrowRight />
@@ -160,7 +160,7 @@ const AboutUsContent = () => {
       </div>
       <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-white p-6 lg:col-span-8">
         <Link
-          href="#"
+          href="/about/features"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
         >
           <h3 className="mb-1 font-semibold">Features</h3>
@@ -169,7 +169,7 @@ const AboutUsContent = () => {
           </p>
         </Link>
         <Link
-          href="#"
+          href="/about/testimonials"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
         >
           <h3 className="mb-1 font-semibold">Testimonials</h3>
@@ -179,7 +179,7 @@ const AboutUsContent = () => {
         </Link>
 
         <Link
-          href="#"
+          href="/about/blog"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
         >
           <h3 className="mb-1 font-semibold">Blog</h3>
@@ -196,7 +196,7 @@ const Service = () => {
     <div className="w-full bg-white p-6 shadow-none lg:w-[300px] lg:shadow-xl">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="mb-3 space-y-5">
-          <Link href="#" className="block font-semibold text-sm hover:underline">
+          <Link href="services/bca" className="block font-semibold text-sm hover:underline">
             Building Assessments & Engineering
           </Link>
           <Link href="#" className="block font-semibold text-sm hover:underline">
@@ -349,7 +349,7 @@ export default Navbar;
 const LINKS = [
   {
     text: "About us",
-    href: "#",
+    href: "/about",
     component: AboutUsContent,
   },
   {
