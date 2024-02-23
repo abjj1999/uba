@@ -196,7 +196,7 @@ const Service = () => {
     <div className="w-full bg-white p-6 shadow-none lg:w-[300px] lg:shadow-xl">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="mb-3 space-y-5">
-          <Link href="services/bca" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/bca" className="block font-semibold text-sm hover:underline">
             Building Assessments & Engineering
           </Link>
           <Link href="#" className="block font-semibold text-sm hover:underline">
