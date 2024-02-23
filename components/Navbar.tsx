@@ -131,12 +131,14 @@ const CTAs = () => {
         <FaUserCircle />
         <span>Learn More</span>
       </Button>
+      <Link href="/contact">
       <Button
         variant="destructive"
         className="rounded-lg   px-4 py-2 font-semibold text-gray-900 "
       >
         Contact Us
       </Button>
+      </Link>
     </div>
   );
 };
@@ -304,7 +306,7 @@ const MobileMenu = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="block lg:hidden">
-      <Button onClick={() => setOpen(true)} className="block text-3xl">
+      <Button variant="ghost" onClick={() => setOpen(true)} className="flex items-center text-3xl">
         <FiMenu />
       </Button>
       <AnimatePresence>
@@ -318,7 +320,7 @@ const MobileMenu = () => {
           >
             <div className="flex items-center justify-between p-6">
               <Logo color="black" />
-              <Button onClick={() => setOpen(false)}>
+              <Button variant="ghost" onClick={() => setOpen(false)}>
                 <FiX className="text-3xl text-neutral-950" />
               </Button>
             </div>
