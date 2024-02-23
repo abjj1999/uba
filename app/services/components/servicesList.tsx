@@ -75,7 +75,6 @@ const people = [
               <li className="border rounded-lg p-2" key={name}>
 
                 <div className="flex items-center justify-between gap-x-6">
-                  {/* <img className="h-16 w-16 rounded-full" src={imageUrl} alt="" /> */}
                   <Link href={link} className="flex items-center gap-x-5">
                   {Icon}
                   <div>
