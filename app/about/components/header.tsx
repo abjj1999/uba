@@ -14,7 +14,7 @@ const About1 = () => {
                     <p className="font-normal text-base leading-6 text-gray-300 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi excepturi libero voluptates quos saepe repudiandae magni. Optio, quis et soluta delectus aperiam magnam similique aliquid, aspernatur quae corrupti numquam? Voluptatum!</p>
                 </div>
                 <div className="w-full lg:w-8/12 ">
-                    <Image className="w-full h-full" src="https://i.ibb.co/FhgPJt8/Rectangle-116.png" alt="A group of People" />
+                    <Image className="w-full h-full" src="/images/houston.jpg" alt="A group of People" />
                 </div>
             </div>
 
