@@ -198,28 +198,55 @@ const Service = () => {
     <div className="w-full bg-white p-6 shadow-none lg:w-[300px] lg:shadow-xl">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="mb-3 space-y-5">
-          <Link href="/services/bca" className="block font-semibold text-sm hover:underline">
-            Building Assessments & Engineering
+          <Link href="/services/pca" className="block font-semibold text-sm hover:underline">
+            PCA ESA
           </Link>
-          <Link href="#" className="block font-semibold text-sm hover:underline">
-            Construction Risk Management
+          <Link href="/services/mep" className="block font-semibold text-sm hover:underline">
+            MEP
           </Link>
         
         
-          <Link href="#" className="block font-semibold text-sm hover:underline">
-            Energy, Sustainability & Resilience
+          <Link href="/services/energy-auditing" className="block font-semibold text-sm hover:underline">
+            Energy Auditing
           </Link>
-          <Link href="#" className="block font-semibold text-sm hover:underline">
-            Environmental Services
+          <Link href="/services/roof-assessment" className="block font-semibold text-sm hover:underline">
+            Roof Assessment
           </Link>
-          <Link href="#" className="block font-semibold text-sm hover:underline">
-            Environmental Health & Safety
+          <Link href="/services/structural-assessment" className="block font-semibold text-sm hover:underline">
+            Structural Assessment
           </Link>
-          <Link href="#" className="block font-semibold text-sm hover:underline">
-            Land Surveying & Zoning 
+          <Link href="/services/desgin" className="block font-semibold text-sm hover:underline">
+            Desgin 
           </Link>
-          <Link href="#" className="block font-semibold text-sm hover:underline">
-            Site Civil Engineering
+          <Link href="/services/CDR" className="block font-semibold text-sm hover:underline">
+            Construction Document Review
+          </Link>
+          <Link href="/services/CAM" className="block font-semibold text-sm hover:underline">
+            Construction Adminstration
+          </Link>
+          <Link href="/services/energy-modeling" className="block font-semibold text-sm hover:underline">
+            Energy Modeling
+          </Link>
+          <Link href="/services/peer-review" className="block font-semibold text-sm hover:underline">
+            Peer Review
+          </Link>
+          <Link href="/services/BEA" className="block font-semibold text-sm hover:underline">
+            Building Envelope Assessment
+          </Link>
+          <Link href="/services/litigation" className="block font-semibold text-sm hover:underline">
+            Litigation
+          </Link>
+          <Link href="/services/causation" className="block font-semibold text-sm hover:underline">
+            Causation
+          </Link>
+          <Link href="/services/budget-review" className="block font-semibold text-sm hover:underline">
+            Budget Review
+          </Link>
+          <Link href="/services/aunual-inspection" className="block font-semibold text-sm hover:underline">
+            Annual Inspection
+          </Link>
+          <Link href="services/SIRS" className="block font-semibold text-sm hover:underline">
+            Structural Integrity Reserve Study
           </Link>
           </div>
        

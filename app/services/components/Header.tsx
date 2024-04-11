@@ -21,6 +21,8 @@ const Header = () => {
       <Image
         src="/images/services_pic.jpg"
         alt=""
+        width="2000"
+        height="1000"
         className="absolute brightness-50 inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
       />
       <div
