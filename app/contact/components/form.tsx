@@ -14,14 +14,63 @@
 */
 // import { useState } from 'react'
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
+"use client";
 import { Button } from '@/components/ui/button'
 import { ChevronDown } from 'lucide-react'
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from 'react';
+import { useToast } from '@/components/ui/use-toast';
 // import { Switch } from '@headlessui/react'
 
 
 
 export default function Form() {
   // const [agreed, setAgreed] = useState(false)
+  // const [name, setName] = useState('')
+  const {toast} = useToast()
+  const [first, setFirst] = useState('')
+  const [last, setLast] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [company, setCompany] = useState('')
+  const [phone, setPhone] = useState('')
+  const [sucess, setSucess] = useState(false)
+
+  const form:any = useRef();
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    const templateParams: any = {
+      first_name: first,
+      last_name: last,
+      email: email,
+      company: company,
+      phone: phone,
+      message: message,
+    }
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID ?? "", process.env.NEXT_PUBLIC_SERVICE_TEMPLATE_ID ?? "", form.current, {
+        publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY ?? "",
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setSucess(true)
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+
+    setFirst('')
+    setLast('')
+    setEmail('')
+    setMessage('')
+    setCompany('')
+    setPhone('')
+  };
 
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -43,7 +92,7 @@ export default function Form() {
           Aute magna irure deserunt veniam aliqua magna enim voluptate.
         </p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form action="#" ref={form} onSubmit={sendEmail} className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -52,8 +101,10 @@ export default function Form() {
             <div className="mt-2.5">
               <input
                 type="text"
-                name="first-name"
+                name="first_name"
                 id="first-name"
+                value={first}
+                onChange={(e) => setFirst(e.target.value)}
                 autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -66,8 +117,10 @@ export default function Form() {
             <div className="mt-2.5">
               <input
                 type="text"
-                name="last-name"
+                name="last_name"
                 id="last-name"
+                value={last}  
+                onChange={(e) => setLast(e.target.value)}
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -82,6 +135,8 @@ export default function Form() {
                 type="text"
                 name="company"
                 id="company"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
                 autoComplete="organization"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -96,6 +151,8 @@ export default function Form() {
                 type="email"
                 name="email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -126,8 +183,10 @@ export default function Form() {
               </div>
               <input
                 type="tel"
-                name="phone-number"
+                name="number"
                 id="phone-number"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -141,6 +200,8 @@ export default function Form() {
               <textarea
                 name="message"
                 id="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 defaultValue={''}
@@ -153,6 +214,13 @@ export default function Form() {
             variant="default"
             type="submit"
             className="block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            onClick={() => {
+              toast({
+                title: "Thank you for reaching out",
+                description: "We will get back to you soon",
+                variant: "default"
+              })
+            }}
           >
             Lets talk
           </Button>
