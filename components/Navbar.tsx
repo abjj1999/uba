@@ -200,13 +200,13 @@ const Service = () => {
     <div className="w-full bg-white p-6 shadow-none lg:w-[300px] lg:shadow-xl">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="mb-3 space-y-5">
-          <Link href="/services/pca" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/property-condition-assessments" className="block font-semibold text-sm hover:underline">
             PCA 
           </Link>
-          <Link href="/services/ESA" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/environmental-site-assessment" className="block font-semibold text-sm hover:underline">
             ESA 
           </Link>
-          <Link href="/services/MEP" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/mechanical-electrical-plumbing" className="block font-semibold text-sm hover:underline">
             MEP
           </Link>
         
@@ -223,10 +223,10 @@ const Service = () => {
           <Link href="/services/design" className="block font-semibold text-sm hover:underline">
             Design 
           </Link>
-          <Link href="/services/CDR" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/construction-document-review" className="block font-semibold text-sm hover:underline">
             Construction Document Review
           </Link>
-          <Link href="/services/CAM" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/construction-adminstration" className="block font-semibold text-sm hover:underline">
             Construction Adminstration
           </Link>
           <Link href="/services/energy-modeling" className="block font-semibold text-sm hover:underline">
@@ -235,7 +235,7 @@ const Service = () => {
           <Link href="/services/peer-review" className="block font-semibold text-sm hover:underline">
             Peer Review
           </Link>
-          <Link href="/services/BEA" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/building-envelope-assessment" className="block font-semibold text-sm hover:underline">
             Building Envelope Assessment
           </Link>
           <Link href="/services/litigation" className="block font-semibold text-sm hover:underline">
@@ -250,7 +250,7 @@ const Service = () => {
           <Link href="/services/annual-inspection" className="block font-semibold text-sm hover:underline">
             Annual Inspection
           </Link>
-          <Link href="services/SIRS" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/structural-study" className="block font-semibold text-sm hover:underline">
             Structural Integrity Reserve Study
           </Link>
           </div>

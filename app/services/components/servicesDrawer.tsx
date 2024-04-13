@@ -19,10 +19,11 @@ import {
 interface DrawerProps {
   desc: String;
   service: String;
-
+  link: any;
+  role: String;
 }
 
-export const  DrawerDemo: React.FC<DrawerProps> =({desc, service}) => {
+export const  DrawerDemo: React.FC<DrawerProps> =({desc, service, link, role}) => {
 //   const [goal, setGoal] = React.useState(350);
 
   
@@ -38,7 +39,7 @@ export const  DrawerDemo: React.FC<DrawerProps> =({desc, service}) => {
         <div className="mx-auto w-full max-w-xl">
           <DrawerHeader>
             <DrawerTitle>{service}</DrawerTitle>
-            <DrawerDescription>Set your daily activity goal.</DrawerDescription>
+            <DrawerDescription>{role}</DrawerDescription>
           </DrawerHeader>
           <div className="p-4 pb-1">
             <div className="space-x-5">
@@ -48,7 +49,7 @@ export const  DrawerDemo: React.FC<DrawerProps> =({desc, service}) => {
             </div>
           </div>
           <DrawerFooter>
-            <Link className="" href="/services/service1">
+            <Link className="" href={link}>
               <Button className="w-full" variant="default">Learn More</Button>
             </Link>
             <DrawerClose asChild>

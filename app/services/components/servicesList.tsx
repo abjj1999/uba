@@ -6,21 +6,21 @@ const services = [
       name: 'Property Condition Assessments',
       role: 'PCA',
       Icon:  <Building2  size={24} />,
-      link: "/services/pca",
-      desc: ""
+      link: "/services/property-condition-assessments",
+      desc: " Property Condition Assessments (PCAs) are comprehensive evaluations of a property's physical condition, identifying potential issues and risks. These assessments involve visual inspections, document reviews, and interviews to assess building systems, structures, and site conditions. PCAs help stakeholders make informed decisions in real estate transactions, property management, and asset planning. By identifying deficiencies, maintenance needs, and compliance issues, PCAs enable risk management, cost control, and informed decision-making. They are essential for protecting investments, ensuring safety, and maintaining property value."
     },
     {
       name: 'Environmental Site Assessments',
       role: 'ESA',
       Icon:  <Leaf  size={24} />,
-      link: "/services/ESA",
+      link: "/services/environmental-site-assessment",
       desc: "Environmental Site Assessments (ESAs) are crucial evaluations conducted to identify potential or existing environmental contamination liabilities associated with a property. Typically executed in phases, ESAs start with a Phase I assessment, which includes a review of historical and current uses of the site to detect any signs of contamination. If necessary, a Phase II assessment follows, involving direct testing of soil, groundwater, and building materials to confirm contaminants. These assessments help stakeholders manage risks, ensure compliance with environmental regulations, and protect against liability. ESAs are vital for informed decision-making in real estate transactions, safeguarding investments, and preserving public health and environmental quality."
     },
     {
       name: 'Mechanical, Electrical, Plumbing',
       role: 'MEP',
       Icon:  <HardHat  size={24} />,
-      link: "/services/MEP",
+      link: "/services/mechanical-electrical-plumbing",
       desc: "MEP stands for Mechanical, Electrical, and Plumbing, essential systems in building design that ensure comfort and functionality. Mechanical aspects include HVAC systems that regulate air quality and temperature. Electrical systems cover lighting, power supply, and distribution, essential for building operations. Plumbing involves water and waste management, crucial for hygiene and accessibility. Together, these systems optimize building performance, enhance energy efficiency, and ensure compliance with safety and building regulations, making them critical for modern construction and sustainable architecture."
     },
     {
@@ -55,14 +55,14 @@ const services = [
       name: 'Construction Documents Review',
       role: 'CDR',
       Icon:  <BrickWall  size={24} />,
-      link: "/services/CDR",
+      link: "/services/construction-document-review",
       desc:"Construction Document Review is a critical process in the construction industry, ensuring that all plans, specifications, and contractual documents are accurate, complete, and executable. This review helps identify discrepancies, conflicts, or missing information that could lead to costly delays or construction errors. By meticulously examining these documents, stakeholders can align on expectations, reduce the risk of legal disputes, and ensure compliance with building codes and regulations. Ultimately, this process safeguards the project's integrity and facilitates a smoother construction phase."
     },
     {
       name: 'Construction Administration',
       role: 'CA',
       Icon:  <Hammer  size={24} />,
-      link: "/services/CAM",
+      link: "/services/construction-adminstration",
       desc:"Construction Administration involves overseeing the daily operations of a construction project to ensure it adheres to the plan, budget, and timeline. This process includes managing contracts, coordinating between stakeholders, handling documentation, and ensuring compliance with building codes and regulations. Effective construction administration helps mitigate risks, solve problems on site, and maintain quality control, leading to the successful completion of projects. It is crucial for streamlining project delivery and ensuring that all aspects of the project meet the required standards and client expectations."
     },
     {
@@ -83,7 +83,7 @@ const services = [
       name: 'Building Envelope Assessment',
       role: 'BEA',
       Icon:  <Users  size={24} />,
-      link: "/services/BEA",
+      link: "/services/building-envelope-assessment",
       desc:"Building Envelope Assessment is a crucial evaluation of a building's exterior elements—walls, roofs, windows, and foundations—to ensure they effectively protect against environmental factors. This assessment identifies weaknesses in the structure that may lead to energy loss, moisture intrusion, and reduced indoor comfort. By diagnosing issues such as insulation failures and air leaks, the assessment helps in enhancing building sustainability, improving energy efficiency, and ensuring long-term durability. It's essential for maintaining optimal building performance and occupant comfort."
     },
     {
@@ -129,10 +129,9 @@ const services = [
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What We Offer</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Services</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
-              suspendisse.
+            Explore our wide range of engineering services designed to ensure safety, efficiency, and sustainability for every project.
             </p>
             
           </div>
@@ -148,7 +147,7 @@ const services = [
                     <p className="text-sm font-semibold leading-6 text-indigo-600">{role}</p>
                   </div>
                   </Link>
-                    <DrawerDemo desc={desc} service={name} />
+                    <DrawerDemo role={role} desc={desc} service={name} link={link} />
                 </div>
               </li>
             ))}
