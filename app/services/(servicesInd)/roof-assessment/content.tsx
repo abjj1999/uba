@@ -16,7 +16,7 @@ export default function Content() {
                 Roof Assessment
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-              At 74 Degree, we specialize in professional roof assessments designed to ensure the longevity and safety of your building's roofing system. Our assessments are conducted in compliance with ASTM E2018-15 standards, providing you with a thorough examination of your roof's current condition. We utilize advanced techniques and tools to identify any defects, potential risks, and necessary repairs. Our detailed reports help you understand the maintenance and repairs needed to protect your investment, ensuring your roof remains in optimal condition for years to come.
+              At 74 Degree, we specialize in professional roof assessments designed to ensure the longevity and safety of your building&apos;s roofing system. Our assessments are conducted in compliance with ASTM E2018-15 standards, providing you with a thorough examination of your roof&apos;s current condition. We utilize advanced techniques and tools to identify any defects, potential risks, and necessary repairs. Our detailed reports help you understand the maintenance and repairs needed to protect your investment, ensuring your roof remains in optimal condition for years to come.
               </p>
             </div>
           </div>
