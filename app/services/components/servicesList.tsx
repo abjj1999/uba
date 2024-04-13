@@ -6,7 +6,7 @@ const services = [
       name: 'Property Condition Assessments',
       role: 'PCA',
       Icon:  <Building2  size={24} />,
-      link: "/services/PCA",
+      link: "/services/pca",
       desc: ""
     },
     {

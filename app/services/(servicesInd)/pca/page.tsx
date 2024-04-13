@@ -1,7 +1,7 @@
 import Reachout from "@/components/Reachout";
 import SHeader from "../components/serviceHeaders";
-// import Content from "./content";
 import Content from "./content";
+// import Content from "./content";
 const Service1 = () => {
     return ( 
         <div className="py-4">
@@ -12,7 +12,7 @@ const Service1 = () => {
             
            
             <Reachout />
-            
+
         </div>
      );
 }
