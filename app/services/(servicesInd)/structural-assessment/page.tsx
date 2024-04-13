@@ -1,19 +1,19 @@
 import Reachout from "@/components/Reachout";
 import SHeader from "../components/serviceHeaders";
 import Content from "./content";
-import { Carousell } from "./carousel";
 
-const Service2 = () => {
+const Service1 = () => {
     return ( 
         <div className="py-4">
-            <SHeader header="Structural Assessment" sub="Ensuring Strength, Safety, and Sophistication in Structures: 74's Building Assessments & Engineering." />
+            <SHeader header="Structural Assessment" sub="Ensure Building Integrity with Our Expert Structural Assessment Services for Safety and Longevity" />
 
             <Content />
             {/* <BlogPostCarousel /> */}
+            
            
             <Reachout />
         </div>
      );
 }
  
-export default Service2;
+export default Service1;

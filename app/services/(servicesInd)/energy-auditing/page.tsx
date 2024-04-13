@@ -1,15 +1,13 @@
 import Reachout from "@/components/Reachout";
 import SHeader from "../components/serviceHeaders";
 import Content from "./content";
-import { Carousell } from "./carousel";
 
 const Service2 = () => {
     return ( 
         <div className="py-4">
-            <SHeader header="Energy Auditing" sub="Ensuring Strength, Safety, and Sophistication in Structures: 74's Building Assessments & Engineering." />
+            <SHeader header="Energy Auditing" sub="Drive Sustainable Performance with Our Comprehensive Energy Audits Designed to Optimize Your Operations" />
 
             <Content />
-            {/* <BlogPostCarousel /> */}
            
             <Reachout />
         </div>

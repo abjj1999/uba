@@ -1,7 +1,8 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function Content() {
   return (
@@ -15,12 +16,7 @@ export default function Content() {
                 Annual Inspection
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
+                At 74 Degree, we provide meticulous annual inspection services designed to maintain and enhance the safety, functionality, and value of your property. Following a structured protocol inspired by industry standards, including ASTM E2018-15, our annual inspections are conducted by certified professionals who assess all critical aspects of your buildings and facilities. These thorough evaluations are aimed at identifying potential issues before they become major problems, ensuring compliance with safety codes, and enhancing asset management strategies. Our detailed reports deliver actionable insights and recommendations, helping you plan for necessary repairs, upgrades, and compliance measures. Partner with us to protect and optimize your property investment through proactive annual inspections.
               </p>
             </div>
           </div>
@@ -36,24 +32,37 @@ export default function Content() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
+            <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> Comprehensive Evaluation: </strong> We examine all key systems and structures to ensure they are in optimal condition and functioning properly.<br />
+                <strong> Preventive Maintenance: </strong>   Identifying minor issues before they escalate, saving costs and extending the lifespan of your assets.<br />
+                <strong> Regulatory Compliance: </strong> Ensuring your facilities meet all relevant safety and building codes to avoid penalties and ensure occupant safety.
+
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                
+                <Separator />
+                <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl ">
+                  Types of Inspections We Offer
+                </h1>
+                <Options title="Structural Integrity Inspection" content="Assessing the building's structural components for signs of stress or deterioration." />
+                <Options title="Mechanical System Inspection" content="Checking HVAC, elevators, and other mechanical systems for operational efficiency and safety." />
+                <Options title="Electrical System Inspection" content="Ensuring all electrical installations and components are safe and functioning correctly." />
+                <Options title="Fire Safety Inspection" content="Examining fire alarms, sprinkler systems, and extinguishers to ensure they are ready in case of emergency." />
+                <Options title="Exterior Inspection" content="Evaluating the roof, facade, and other external elements for damage or potential risks." />
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+
+
+        <div className="mt-10">
+
+          <Carousell names={["Enhanced Safety", "Cost Savings", "Increased Asset Value", "Operational Reliability", "Peace of Mind"]} />
+
+
+        </div>
       </div>
     </div>
   );

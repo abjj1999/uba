@@ -1,7 +1,8 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function Content() {
   return (
@@ -15,13 +16,7 @@ export default function Content() {
               Peer Review
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
-              </p>
+              At 74 Degree,  our peer review services are an essential part of maintaining high standards and ensuring the accuracy of engineering and construction projects. Adhering to ASTM E2018-15 guidelines, we provide comprehensive reviews conducted by seasoned experts who evaluate the adequacy, accuracy, and compliance of project designs and documents. Our peer review process fosters collaboration and leverages collective expertise to identify potential issues early, ensuring that every project aspect is scrutinized for quality and efficacy. By integrating our peer reviews into your project lifecycle, you can mitigate risks, enhance safety, and improve overall project outcomes, leading to a smoother construction process and a more reliable final product.</p>
             </div>
           </div>
         </div>
@@ -36,24 +31,36 @@ export default function Content() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
+            <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> Risk Reduction: </strong>  Early detection and correction of design errors or omissions before construction begins.<br />
+                <strong> Quality Assurance: </strong>  Ensures high standards of engineering practice and compliance with all relevant codes and regulations.<br />
+                <strong> Efficiency Improvement:</strong> Streamlines the project process by reducing the likelihood of costly delays and redesigns.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                
-              </ul>
+                <Separator />
+                <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl ">
+                  Type of Peer Review we specialize in
+                </h1>
+                <Options title="Design Document Review" content="Examination of architectural and engineering drawings, specifications, and calculations." />
+                <Options title="Code Compliance Review" content="Ensuring all designs meet local, state, and federal regulations and codes." />
+                <Options title="Constructability Review" content="Evaluation of the project's design from a construction perspective, focusing on practical implementation." />
+                <Options title="Value Engineering Review" content=" Assessing the project for opportunities to improve value without compromising quality or performance." />
+                <Options title="Environmental Impact Review" content=" Analyzing potential environmental impacts and ensuring compliance with environmental standards." />
+               </ul>
             </div>
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+
+
+        <div className="mt-10">
+
+          <Carousell names={["Enhanced Safety", "Cost Savings", "Increased Credibility", "Improved Design Quality", "Higher Quality Outcomes", "Compliance Assurance"]} />
+     
+    
+        </div>
       </div>
     </div>
   );

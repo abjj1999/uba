@@ -1,7 +1,8 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function Content() {
   return (
@@ -15,13 +16,7 @@ export default function Content() {
               Energy Modeling
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
-              </p>
+              At 74 Degree, we leverage cutting-edge energy modeling techniques to optimize the energy efficiency and performance of your projects. Our services, structured according to ASTM E2018-15 standards, involve detailed simulations that predict the energy use and environmental impact of buildings at various stages of their design and operation. By integrating these models early in the design process, we enable architects and developers to make informed decisions that enhance building sustainability and occupant comfort. Our energy models provide precise data, helping to refine building systems and envelope designs to achieve optimal energy performance and compliance with environmental standards. </p>
             </div>
           </div>
         </div>
@@ -36,24 +31,37 @@ export default function Content() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
+            <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> Accurate Performance Prediction: </strong>  Our models accurately predict the energy consumption and HVAC loads, assisting in designing more efficient systems.<br />
+                <strong> Iterative Optimization: </strong>  We use modeling to iteratively test and improve building designs to maximize energy efficiency.<br />
+                <strong> Regulatory Compliance:</strong>  Ensuring that designs meet or exceed local energy codes and environmental regulations through detailed analysis.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                
-              </ul>
+                <Separator />
+                <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl ">
+                  Type of Energy Modeling we specialize in
+                </h1>
+                <Options title="Whole Building Simulation" content="Comprehensive modeling that considers all aspects of building performance."/>
+                <Options title="HVAC System Modeling" content="Focused simulations on heating, ventilation, and air conditioning systems to optimize their efficiency."/>
+                <Options title="Daylighting Modeling" content="Analyzing natural light within spaces to reduce reliance on artificial lighting."/>
+                <Options title="Renewable Energy Simulation" content="Evaluating the effectiveness and impact of incorporating renewable energy sources like solar and wind."/>
+                <Options title="Thermal Comfort Modeling" content="Ensuring that the building's climate controls meet the comfort requirements of occupants throughout different seasons."/>
+                             
+               </ul>
             </div>
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+
+
+        <div className="mt-10">
+
+          <Carousell names={["Enhanced Energy Efficiency", "Cost Savings", "Improved Building Performance", "Sustainability", "Higher Quality Outcomes", "Marketability"]} />
+     
+    
+        </div>
       </div>
     </div>
   );

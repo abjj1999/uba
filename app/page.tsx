@@ -18,7 +18,7 @@ export default function Home() {
 
       <Separator />
       <Testimonial />
-      <Trusted />
+      {/* <Trusted /> */}
 
       <div className="flex flex-col items-center">
       <Card title="" description="" image="/images/card.jpg" />

@@ -1,6 +1,6 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
 
 export default function Content() {
@@ -15,12 +15,7 @@ export default function Content() {
                 MEP
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
+                Our comprehensive MEP services ensure that your building is not only functional but also optimized for comfort and efficiency. We specialize in the detailed design, strategic implementation, and ongoing maintenance of essential building systems, including Mechanical, Electrical, and Plumbing. Our expert teams collaborate to create solutions tailored to each project's unique requirements. From sophisticated heating, ventilation, and air conditioning (HVAC) systems that enhance indoor air quality and climate control to reliable and safe electrical installations covering power distribution, lighting, and emergency systems, and efficient plumbing networks that manage water supply and waste with precision—our integrated services cover every aspect necessary to ensure your building operates at its best.
               </p>
             </div>
           </div>
@@ -38,22 +33,30 @@ export default function Content() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> Mechanical: </strong> Our HVAC solutions optimize indoor air quality and temperature, providing thermal comfort tailored to your needs. <br />
+                <strong> Electrical: </strong> We ensure reliable and safe electrical systems, from power supply and distribution to sophisticated lighting setups. <br />
+                <strong> Plumbing: </strong> Our experts design efficient water and waste systems, covering everything from supply and distribution to sanitation.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                
+                <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Type of MEP services we specialize in
+                </h1>
+                <Options title="HVAC" content="Regulates indoor temperature, humidity, and air quality." />
+                <Options title="Fire Protection Systems" content="Includes sprinklers, fire suppression systems, and fire alarms." />
+                <Options title="Power Distribution" content=" Involves the distribution of electrical power throughout the building." />
+                <Options title="Lighting Systems" content=" Includes indoor, outdoor, emergency, and specialty lighting." />
+                <Options title="Water Supply Systems" content="Manage the distribution and regulation of water for drinking, heating, and washing." />
+                <Options title="Sanitary and Waste Management" content="Includes all piping and equipment for the removal of sewage and waste water." />
+                <Options title="Stormwater Drainage" content="Systems designed to route rainwater away from the building to prevent flooding." />
+                <Options title="Gas Piping Systems" content="Provides natural gas distribution for heating and cooking purposes." />
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+      <div className="flex items-center justify-center flex-col mt-10">
+
+        <Carousell names={["Comfort and Quality of Life","Safety","Efficiency","Increased Property Value","Long-term Savings","Operational Reliability",]} />
       </div>
     </div>
   );

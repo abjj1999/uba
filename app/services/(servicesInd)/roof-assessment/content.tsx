@@ -1,7 +1,8 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function Content() {
   return (
@@ -12,15 +13,10 @@ export default function Content() {
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600"></p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Roof Assessment
+                Roof Assessment
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
+              At 74 Degree, we specialize in professional roof assessments designed to ensure the longevity and safety of your building's roofing system. Our assessments are conducted in compliance with ASTM E2018-15 standards, providing you with a thorough examination of your roof's current condition. We utilize advanced techniques and tools to identify any defects, potential risks, and necessary repairs. Our detailed reports help you understand the maintenance and repairs needed to protect your investment, ensuring your roof remains in optimal condition for years to come.
               </p>
             </div>
           </div>
@@ -36,13 +32,21 @@ export default function Content() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
+            <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> Comprehensive Inspection: </strong>  We conduct an in-depth visual and physical inspection to identify any signs of wear, damage, or potential failure points on your roof. <br />
+                <strong> Documentation Review: </strong>  Our experts review all relevant roofing documentation, including installation and maintenance records, to provide a historical perspective on the roof&rsquo;s condition.<br />
+                <strong> Detailed Reporting:</strong> You receive a detailed assessment report outlining the condition of the roof, necessary repairs, estimated costs, and maintenance recommendations to enhance its lifespan.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                <Separator />
+                <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl ">
+                  Type of Roof Assessment we specialize in
+                </h1>
+                <Options title="Visual Inspection" content="A preliminary examination to identify visible signs of wear, damage, or potential issues." />
+                <Options title= "Infrared Thermography" content="Advanced technique to detect moisture and insulation issues." />
+                <Options title= "Structural Assessment" content="Detailed analysis of the roof structure to ensure stability and safety." />
+                <Options title= "Core Sampling" content="Extracting sections of the roof to analyze the underlying materials and layers for more comprehensive understanding." />
                 
               </ul>
             </div>
@@ -50,10 +54,14 @@ export default function Content() {
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+
+
+        <div className="mt-10">
+
+          <Carousell names={["Cost Efficiency", "Safty","Longevity", "Increase Property Value"]} />
+     
+    
+        </div>
       </div>
     </div>
   );

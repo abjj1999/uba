@@ -1,7 +1,8 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function Content() {
   return (
@@ -15,12 +16,7 @@ export default function Content() {
               Structural Integrity Reserve Study
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
+                At 74 Degree, we provide Structural Integrity Reserve Studies that serve as essential tools for property managers and owners to plan for future repairs and maintenance. Our studies are meticulously aligned with industry standards, including ASTM E2018-15, ensuring comprehensive assessments of your building's structural elements. We evaluate the condition of critical infrastructure components such as foundations, beams, columns, and external walls to forecast potential future repair and replacement needs. This proactive approach not only helps in maintaining structural integrity but also optimizes financial planning by predicting future expenditures. Trust our experts to deliver detailed, actionable reports that enhance your building's longevity and operational efficiency.
               </p>
             </div>
           </div>
@@ -36,24 +32,37 @@ export default function Content() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
+            <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> Detailed Condition Assessment: </strong> We meticulously inspect structural elements to determine their current state and anticipated lifecycle.<br />
+                <strong> Financial Forecasting: </strong>   Our studies provide detailed cost estimates for necessary future repairs or replacements.<br />
+                <strong> Customized Planning: </strong> Tailored strategies to meet specific building needs and budget constraints.
+
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                
+                <Separator />
+                <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl ">
+                  Types of Structural Elements We Assess
+                </h1>
+                <Options title="Full Structural Survey" content="Comprehensive analysis of all structural aspects of the building." />
+                <Options title="Component-Specific Study" content="Focused studies on particular structural components like roofs or foundations." />
+                <Options title="Periodic Review" content="Regular updates to the reserve study to reflect changes in building condition or usage." />
+                <Options title="Emergency Preparedness Study" content="Special evaluations to prepare for potential damage from environmental or operational hazards." />
+                <Options title="Compliance Upgrade Study" content="Reviews aimed at ensuring the structure meets updated building codes and standards." />
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+
+
+        <div className="mt-10">
+
+          <Carousell names={["Long-Term Cost Savings", "Enhanced Building Safety", "Improved Budgeting Accuracy", "Increased Property Value", "Regulatory Compliance"]} />
+
+
+        </div>
       </div>
     </div>
   );

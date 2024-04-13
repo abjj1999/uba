@@ -1,7 +1,8 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function Content() {
   return (
@@ -12,16 +13,10 @@ export default function Content() {
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600"></p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Construction Adminstration
+              Construction Administration 
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
-              </p>
+              At 74 Degree, our construction administration services are tailored to ensure every project runs smoothly, adhering to the highest industry standards. With a focus on effective management and oversight, our team facilitates the communication, documentation, and coordination required to bring construction projects to successful completion. We oversee all phases of construction, from pre-construction planning to final inspections, ensuring that each stage adheres to the specified guidelines and quality standards. Our proactive approach minimizes risks, manages contractors, and maintains strict adherence to schedules and budgets, empowering your projects with precision and expertise.</p>
             </div>
           </div>
         </div>
@@ -36,24 +31,36 @@ export default function Content() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
+            <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> Effective Coordination: </strong>  We manage all project stakeholders, ensuring clear communication and coordinated efforts across all phases of construction.<br />
+                <strong> Documentation Control: </strong>  Rigorous management of construction documents, including contracts, drawings, and revisions, to ensure they are up-to-date and accessible.<br />
+                <strong> Quality and Compliance Oversight:</strong> Continuous monitoring of construction activities to ensure compliance with project specifications and industry standards.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                
+                <Separator />
+                <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-3xl ">
+                  Type of Construction Administration services we specialize in
+                </h1>
+                <Options title="Contract Administration" content="Managing the contract process from bidding to project close-out to ensure compliance and performance." />
+                <Options title="Site Management" content="Overseeing the physical construction activities to ensure they follow the project plans and safety regulations." />
+                <Options title="Document Management" content="Maintaining and controlling project documentation, including contracts, drawings, and communication records." />
+                <Options title="Change Management" content="Handling changes in project scope, ensuring all adjustments are documented and approved by relevant stakeholders." />
+                <Options title="Quality Control Administration" content="Implementing quality control measures to ensure the project meets all agreed-upon standards and functionalities." />
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+
+
+        <div className="mt-10">
+
+          <Carousell names={["Improved Efficiency", "Enhanced Communication", 'Risk Management','Project Consistency','Regulatory Adherence']} />
+     
+    
+        </div>
       </div>
     </div>
   );

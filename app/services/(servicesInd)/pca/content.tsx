@@ -1,7 +1,8 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function Content() {
   return (
@@ -12,15 +13,10 @@ export default function Content() {
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600"></p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                BCA
+                PCA
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
+                At 74 Degrees, we specialize in providing comprehensive Property Condition Assessments (PCA) in accordance with the ASTM E2018-15 standard. Our assessments involve reviewing documentation, conducting detailed property surveys, interviewing stakeholders, and compiling findings into actionable reports.
               </p>
             </div>
           </div>
@@ -36,24 +32,38 @@ export default function Content() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
+            <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> Documentation Review: </strong>  Evaluation of all pertinent property documents. <br />
+                <strong> Walk-Through Survey: </strong>  Inspection of the property to identify any observable deficiencies. <br />
+                <strong> Interviews: </strong> Discussions with property managers, owners, and tenants to gather additional insights. <br />
+                <strong> Detailed Reporting:</strong> Delivery of a thorough Property Condition Report (PCR) that outlines deficiencies, suggests remedies, and estimates costs.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                
+                <Separator />
+                <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl ">
+                  Type of PCA we specialize in
+                </h1>
+                <Options title="Baseline PCA" content="Follows ASTM E2018 guidelines to provide an overview of the building&rsquo;s condition, covering structural elements and major systems like HVAC and plumbing." />
+                <Options title="Equity PCA" content="Offers a detailed analysis for high-value transactions or institutional investors, focusing on future liabilities and extensive property features." />
+                <Options title="Triple Net Lease PCA" content="Specialized for properties under triple net leases, assessing long-term liabilities and maintenance responsibilities of the tenant." />
+                <Options title="Limited Scope PCA" content="Focuses on specific aspects of the property, such as the roof or HVAC system, according to the client&rsquo;s needs." />
+                <Options title="Repositioning PCA" content="Evaluates conditions and proposed changes for properties undergoing renovations, aiding in budgeting and planning" />
+                <Options title="Pre-Lease or End-of-Lease PCA" content="Assesses the property&rsquo;s condition at the start or end of a lease to determine necessary repairs to meet lease terms." />
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+
+
+        <div className="mt-10">
+
+          <Carousell names={["Risk Identification","Informed Decision Making","Financial Planning","Negotiation Leverage","Asset Management","Due Diligence",
+     
+    ]}/>
+        </div>
       </div>
     </div>
   );

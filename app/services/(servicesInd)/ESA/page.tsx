@@ -5,8 +5,8 @@ import Content from "./content";
 const Service1 = () => {
     return ( 
         <div className="py-4">
-            <SHeader header="Litigation" 
-            sub="Navigate Complex Legal Waters with Expert Litigation Support for Construction and Building Disputes" />
+            <SHeader header="Environmental Site Assessment" 
+            sub="Secure Your Investment with Our Comprehensive Environmental Site Assessments for Property Due Diligence" />
             <Content />
             {/* <BlogPostCarousel /> */}
             

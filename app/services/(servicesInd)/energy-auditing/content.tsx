@@ -1,6 +1,6 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
 
 export default function Content() {
@@ -12,15 +12,10 @@ export default function Content() {
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600"></p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Energy Auditing
+                Energy Auditing
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
+              Our energy auditing services are designed to identify opportunities to reduce energy consumption and enhance efficiency in your building. By conducting detailed assessments, we help our clients save money, improve performance, and support environmental sustainability. Our certified energy auditors use the latest technology and methodologies to deliver actionable insights.
               </p>
             </div>
           </div>
@@ -38,22 +33,21 @@ export default function Content() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> Walk-Through Audit: </strong> A preliminary analysis that quickly identifies major energy-saving opportunities. <br />
+                <strong> Standard Audit: </strong> Involves detailed energy account analysis, a survey of site energy use, and efficiency recommendations.<br />
+                <strong> Investment-Grade Audit: </strong>  A detailed analysis providing in-depth insights and financial analysis for substantial capital investments in energy efficiency.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                
                 
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+      <div className="flex items-center justify-center flex-col mt-10">
+
+        <Carousell names={["Cost Savings","Improved Building Performance","Environmental Benefits","Enhanced Comfort","Long-term Savings","Compliance and Incentives",]} />
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 import { Building2, Cloud, LockIcon, Server } from "lucide-react";
-import Options from "./options";
-import { Carousell } from "./carousel";
+import Options from "../components/options";
+import { Carousell } from "../components/carousel";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function Content() {
   return (
@@ -12,15 +13,10 @@ export default function Content() {
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600"></p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Structural Assessment
+                Structural Assessment
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At 74 Degrees, we specialize in providing comprehensive Building
-                Assessment and Engineering services, designed to meet the
-                diverse needs of our clients in the construction and real estate
-                sectors. Our service is tailored to ensure that every building,
-                whether new or existing, meets the highest standards of safety,
-                functionality, and sustainability.
+              At 74 Degree, our structural assessment services are dedicated to ensuring the safety, stability, and longevity of your building’s structure. Using cutting-edge technology and engineering expertise, we provide detailed evaluations of building structures to identify potential risks, design flaws, or deterioration that may impact building integrity. Our assessments are crucial for property owners looking to maintain their buildings, adhere to safety standards, and plan for future renovations or expansions. Each assessment culminates in a comprehensive report that offers actionable insights and recommendations tailored to extend the life of your property and enhance its safety and functionality.
               </p>
             </div>
           </div>
@@ -36,24 +32,35 @@ export default function Content() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg ">
+            <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
               <p className="">
-             <strong> New Building Projects: </strong> Ensuring new constructions are designed and built to the highest standards. <br />
-             <strong> Renovation and Retrofitting: </strong> Assessing and upgrading existing buildings for safety, efficiency, and compliance. <br />
-             <strong> Real Estate Transactions: </strong> Providing detailed assessments for buyers, sellers, and investors in real estate.
+                <strong> In-Depth Analysis: </strong>  We conduct thorough examinations of the structural elements, including foundations, beams, columns, and load-bearing walls.<br />
+                <strong> Identification of Issues: </strong>  Our experts pinpoint areas of concern such as cracks, corrosion, water damage, and other signs of structural wear or failure.<br />
+                <strong> Detailed Reporting:</strong> Clients receive an extensive report that outlines current conditions, potential risks, and recommended remedial actions.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                
+                <Separator />
+                <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl ">
+                  Type of Structural Assessment we specialize in
+                </h1>
+                <Options title="Visual Inspection" content="Basic yet essential, focusing on visible signs of distress or deterioration." />
+                <Options title="Non-Destructive Testing (NDT)" content=" Utilizes methods like ultrasound, radiography, and thermal imaging to assess internal conditions without damaging the structure." />
+                <Options title="Load Testing" content=" Applies controlled loads to a structure to measure response and ensure it can support its intended loads safely." />
+                <Options title="Forensic Analysis" content="Detailed investigation following a failure or incident to determine the cause and prevent future occurrences." />
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-      <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                
-              </h1>
-      <Carousell />
+
+
+        <div className="mt-10">
+
+          <Carousell names={["Cost Efficiency", "Safty","Longevity", "Increase Property Value", "Compliance"]} />
+     
+    
+        </div>
       </div>
     </div>
   );

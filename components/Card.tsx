@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 interface CardProps {
   title: string;
@@ -20,10 +21,12 @@ const Card: React.FC<CardProps> = ({ title, description, image }) => {
         <h5 className="block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400">
             Mohanad Al Hilfi - CEO
         </h5>
+        <Link href="/about">
         <Button variant="outline" className="text-black">
             {/* that will go to about */}
             Read More  
         </Button>
+        </Link>
       </div>
     </div>
   );

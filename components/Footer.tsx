@@ -48,13 +48,13 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                 <Link href="">
+                 <Link href="https://www.linkedin.com/company/74-degree/">
                   <p className="hover:underline">
                     LinkedIn
                   </p>
                  </Link>
                 </li>
-                <li className="mb-4">
+                {/* <li className="mb-4">
                 <Link href="">
                   <p className="hover:underline">
                     Twitter
@@ -67,7 +67,7 @@ const Footer = () => {
                     Facebook
                   </p>
                  </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div>
@@ -94,14 +94,14 @@ const Footer = () => {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
             <Link href="" className="hover:underline">
-              UBA™
+              74 Degree™
             </Link>
             . All Rights Reserved.
           </span>
           <div className="flex items-center mt-4 sm:justify-center sm:mt-0">
             
 
-            <Link
+            {/* <Link
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
@@ -113,10 +113,10 @@ const Footer = () => {
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <FaXTwitter className="w-4 h-4" />
-            </Link>
+            </Link> */}
 
             <Link
-              href="#"
+              href="https://www.linkedin.com/company/74-degree/"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <FaLinkedinIn className="w-4 h-4" />

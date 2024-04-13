@@ -54,7 +54,7 @@ const Logo = ({ color = "white" }: { color?: string }) => {
   return (
     <Link href="/"  className="flex items-center gap-2">
       <span className="text-2xl font-bold" style={{ color }}>
-        74 degrees
+        74 Degree
       </span>
       
     </Link >
@@ -124,6 +124,7 @@ const NavLink = ({
 const CTAs = () => {
   return (
     <div className="flex items-center gap-3">
+      {/* <Link href="/about">
       <Button
         variant="outline"
         className="flex items-center gap-2 rounded-lg   px-4 py-2 font-semibold text-black "
@@ -131,10 +132,11 @@ const CTAs = () => {
         <FaUserCircle />
         <span>Learn More</span>
       </Button>
+      </Link> */}
       <Link href="/contact">
       <Button
         variant="destructive"
-        className="rounded-lg   px-4 py-2 font-semibold text-gray-900 "
+        className="rounded-lg   px-4 py-2 font-semibold text-gray-100 "
       >
         Contact Us
       </Button>
@@ -198,10 +200,13 @@ const Service = () => {
     <div className="w-full bg-white p-6 shadow-none lg:w-[300px] lg:shadow-xl">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="mb-3 space-y-5">
-          <Link href="/services/pca" className="block font-semibold text-sm hover:underline">
-            PCA ESA
+          <Link href="/services/PCA" className="block font-semibold text-sm hover:underline">
+            PCA 
           </Link>
-          <Link href="/services/mep" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/ESA" className="block font-semibold text-sm hover:underline">
+            ESA 
+          </Link>
+          <Link href="/services/MEP" className="block font-semibold text-sm hover:underline">
             MEP
           </Link>
         
@@ -215,8 +220,8 @@ const Service = () => {
           <Link href="/services/structural-assessment" className="block font-semibold text-sm hover:underline">
             Structural Assessment
           </Link>
-          <Link href="/services/desgin" className="block font-semibold text-sm hover:underline">
-            Desgin 
+          <Link href="/services/design" className="block font-semibold text-sm hover:underline">
+            Design 
           </Link>
           <Link href="/services/CDR" className="block font-semibold text-sm hover:underline">
             Construction Document Review
@@ -242,7 +247,7 @@ const Service = () => {
           <Link href="/services/budget-review" className="block font-semibold text-sm hover:underline">
             Budget Review
           </Link>
-          <Link href="/services/aunual-inspection" className="block font-semibold text-sm hover:underline">
+          <Link href="/services/annual-inspection" className="block font-semibold text-sm hover:underline">
             Annual Inspection
           </Link>
           <Link href="services/SIRS" className="block font-semibold text-sm hover:underline">

@@ -31,7 +31,7 @@ import {
         </h4>
         <CollapsibleTrigger asChild>
           <Button variant="ghost" size="sm">
-            <Plus className="h-6 w-6 border border-gray-800  rounded-full text-red-500" />
+            <Plus className="h-6 w-6  rounded-full " />
             <span className="sr-only">Toggle</span>
           </Button>
         </CollapsibleTrigger>

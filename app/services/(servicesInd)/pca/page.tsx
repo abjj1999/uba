@@ -1,7 +1,6 @@
 import Reachout from "@/components/Reachout";
 import SHeader from "../components/serviceHeaders";
 import Content from "./content";
-import { Carousell } from "./carousel";
 
 const Service1 = () => {
     return ( 
@@ -10,6 +9,7 @@ const Service1 = () => {
 
             <Content />
             {/* <BlogPostCarousel /> */}
+            
            
             <Reachout />
         </div>
