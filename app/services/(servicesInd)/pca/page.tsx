@@ -12,6 +12,7 @@ const Service1 = () => {
             
            
             <Reachout />
+            
         </div>
      );
 }
