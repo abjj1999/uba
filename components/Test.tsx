@@ -37,7 +37,7 @@ export default function Testimonial() {
               <p className="text-base font-semibold leading-7 text-indigo-600">74</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"> Welcome to our engineering and consulting firm</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-              At 74 degree, we are dedicated to driving innovation, problem-solving, and excellence in every project we undertake. With a passion for precision and a commitment to exceeding expectations, our team stands ready to collaborate with you to turn your ideas into reality. Whether you're seeking cutting-edge engineering solutions or expert consultancy services, you've come to the right place. Let's embark on this journey together, shaping a future of ingenuity and success.
+              At 74 degree, we are dedicated to driving innovation, problem-solving, and excellence in every project we undertake. With a passion for precision and a commitment to exceeding expectations, our team stands ready to collaborate with you to turn your ideas into reality. Whether you&apos;re seeking cutting-edge engineering solutions or expert consultancy services, you&apos;ve come to the right place. Let&apos;s embark on this journey together, shaping a future of ingenuity and success.
               </p>
             </div>
           </div>
