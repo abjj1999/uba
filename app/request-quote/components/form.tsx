@@ -69,7 +69,7 @@ export default function Form() {
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID ?? "", process.env.NEXT_PUBLIC_SERVICE_TEMPLATE_ID2 ?? "", form.current, {
-        publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLIC ?? "",
+        publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY ?? "",
       })
       .then(
         () => {
