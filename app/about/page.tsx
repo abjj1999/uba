@@ -6,7 +6,7 @@ const AboutPage = () => {
     return ( 
         <div className="">
             <About1 />
-            <Team />
+            {/* <Team /> */}
             <Reachout />
         </div>
      );

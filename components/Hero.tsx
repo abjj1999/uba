@@ -12,25 +12,26 @@ const Hero = () => {
         
         <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                      Shaping Tomorrow with 
+          Comprehensive Solutions for Every Real Estate Venture
 
-            <br />
-            Sustainable Building & Environmental Solutions
+            
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-                      Building a Greener Future with Expertise in Sustainable Construction, Energy Efficiency, and Environmental Innovation. Join us in our journey towards a more sustainable world.
+          Unlocking the full spectrum of real estate potential, our comprehensive suite of services spans building, environmental, land, sustainability, and commercial valuation expertise, seamlessly guiding clients through every phase of the real estate lifecycle with precision and insight nationwide
 
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <Link
-              href="#"
+              href="/request-quote"
               className=" text-sm font-semibold text-black "
             >
-              <Button className="text-black" variant="outline">Get started</Button>
+              <Button className="text-black font-semibold" variant="secondary">
+                Request a Quote 
+              </Button>
               
             </Link>
             <Link
-              href="#"
+              href="/about"
               className=" text-sm font-semibold text-black "
             >
               <Button className="text-white gap-2" variant="ghost">

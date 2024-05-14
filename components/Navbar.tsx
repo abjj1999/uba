@@ -8,7 +8,7 @@ import {
   useScroll,
   motion,
 } from "framer-motion";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -133,12 +133,12 @@ const CTAs = () => {
         <span>Learn More</span>
       </Button>
       </Link> */}
-      <Link href="/contact">
+      <Link href="/request-quote">
       <Button
         variant="destructive"
         className="rounded-lg   px-4 py-2 font-semibold text-gray-100 "
       >
-        Contact Us
+        Request a Quote
       </Button>
       </Link>
     </div>
@@ -229,36 +229,17 @@ const Service = () => {
           <Link href="/services/construction-adminstration" className="block font-semibold text-sm hover:underline">
             Construction Adminstration
           </Link>
-          <Link href="/services/energy-modeling" className="block font-semibold text-sm hover:underline">
-            Energy Modeling
-          </Link>
-          <Link href="/services/peer-review" className="block font-semibold text-sm hover:underline">
-            Peer Review
-          </Link>
-          <Link href="/services/building-envelope-assessment" className="block font-semibold text-sm hover:underline">
-            Building Envelope Assessment
-          </Link>
-          <Link href="/services/litigation" className="block font-semibold text-sm hover:underline">
-            Litigation
-          </Link>
-          <Link href="/services/causation" className="block font-semibold text-sm hover:underline">
-            Causation
-          </Link>
-          <Link href="/services/budget-review" className="block font-semibold text-sm hover:underline">
-            Budget Review
-          </Link>
-          <Link href="/services/annual-inspection" className="block font-semibold text-sm hover:underline">
-            Annual Inspection
-          </Link>
-          <Link href="/services/structural-study" className="block font-semibold text-sm hover:underline">
-            Structural Integrity Reserve Study
-          </Link>
+          
           </div>
        
       </div>
-      <Button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
-        Contact sales
-      </Button>
+      <Link href="/contact" className={buttonVariants({
+        variant: "destructive",
+        className: "w-full text-center",
+      })}>
+        
+        Reach out to us
+      </Link>
     </div>
   );
 };
@@ -396,4 +377,8 @@ const LINKS = [
     text: "Projects",
     href: "#",
   },
+  {
+    text: "Contact",
+    href: "/contact",
+  }
 ];

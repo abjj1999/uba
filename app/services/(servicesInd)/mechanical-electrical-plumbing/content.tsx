@@ -37,7 +37,7 @@ export default function Content() {
                 <strong> Electrical: </strong> We ensure reliable and safe electrical systems, from power supply and distribution to sophisticated lighting setups. <br />
                 <strong> Plumbing: </strong> Our experts design efficient water and waste systems, covering everything from supply and distribution to sanitation.
               </p>
-              <ul role="list" className="mt-8 space-y-8 text-gray-600">
+              {/* <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl">
                   Type of MEP services we specialize in
                 </h1>
@@ -49,7 +49,7 @@ export default function Content() {
                 <Options title="Sanitary and Waste Management" content="Includes all piping and equipment for the removal of sewage and waste water." />
                 <Options title="Stormwater Drainage" content="Systems designed to route rainwater away from the building to prevent flooding." />
                 <Options title="Gas Piping Systems" content="Provides natural gas distribution for heating and cooking purposes." />
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

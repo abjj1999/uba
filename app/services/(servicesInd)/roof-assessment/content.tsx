@@ -45,7 +45,6 @@ export default function Content() {
                 </h1>
                 <Options title="Visual Inspection" content="A preliminary examination to identify visible signs of wear, damage, or potential issues." />
                 <Options title= "Infrared Thermography" content="Advanced technique to detect moisture and insulation issues." />
-                <Options title= "Structural Assessment" content="Detailed analysis of the roof structure to ensure stability and safety." />
                 <Options title= "Core Sampling" content="Extracting sections of the roof to analyze the underlying materials and layers for more comprehensive understanding." />
                 
               </ul>

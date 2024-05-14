@@ -35,9 +35,9 @@ export default function Testimonial() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600">74</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Engineering Precision for a Sustainable Future</h1>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"> Welcome to our engineering and consulting firm</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                Welcome to 74 Degree, where our commitment to engineering excellence drives us to deliver high-performance solutions for complex challenges. Based in Houston, Texas, we provide a comprehensive range of engineering services tailored to enhance building performance, ensure compliance, and support our clients through every stage of their projects.
+              At 74 degree, we are dedicated to driving innovation, problem-solving, and excellence in every project we undertake. With a passion for precision and a commitment to exceeding expectations, our team stands ready to collaborate with you to turn your ideas into reality. Whether you're seeking cutting-edge engineering solutions or expert consultancy services, you've come to the right place. Let's embark on this journey together, shaping a future of ingenuity and success.
               </p>
             </div>
           </div>
@@ -55,13 +55,12 @@ export default function Testimonial() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>
-                From initial assessments through to the final stages of construction, our expert team utilizes the latest technologies and adheres to stringent standards to ensure precision and reliability. Whether it is conducting in-depth Property Condition Assessments, designing robust MEP systems, or providing expert litigation support, our approach is always thorough, informed, and innovative.
-              </p>
+              From initial assessments through to the final stages of construction, our expert team utilizes the latest technologies and adheres to stringent standards to ensure precision and reliability. Whether it is conducting in-depth Property Condition Assessments, MEP systems assessment, or Environmental Site Assessments, our approach is always thorough, informed, and innovative.              </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
                   <HardHat className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Comprehensive Expertise</strong> We cover a broad spectrum of engineering services including Environmental Site Assessments, Energy Auditing, and Building Envelope Assessment, ensuring
+                    <strong className="font-semibold text-gray-900">Comprehensive Expertise</strong> We cover a broad spectrum of engineering services including Environmental Site Assessments, property condition assessment, Energy Auditing, and Building Envelope Assessment.
                   </span>
                 </li>
                 <li className="flex gap-x-3">

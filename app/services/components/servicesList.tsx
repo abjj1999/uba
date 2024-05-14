@@ -65,62 +65,6 @@ const services = [
       link: "/services/construction-adminstration",
       desc:"Construction Administration involves overseeing the daily operations of a construction project to ensure it adheres to the plan, budget, and timeline. This process includes managing contracts, coordinating between stakeholders, handling documentation, and ensuring compliance with building codes and regulations. Effective construction administration helps mitigate risks, solve problems on site, and maintain quality control, leading to the successful completion of projects. It is crucial for streamlining project delivery and ensuring that all aspects of the project meet the required standards and client expectations."
     },
-    {
-      name: 'Energy Modeling',
-      role: 'EM',
-      Icon:  <Zap  size={24} />,
-      link: "/services/energy-modeling",
-      desc:"Energy modeling is a powerful tool used in building design to simulate a building's energy consumption. By creating detailed models of energy use, architects and engineers can predict and optimize the performance of HVAC systems, lighting, and other energy-related features. This process helps in reducing energy costs and environmental impact, enhancing building sustainability. Energy modeling is essential for achieving compliance with green building standards and for making informed decisions on energy efficiency measures and technologies."
-    },
-    {
-      name: 'Peer Review',
-      role: 'PR',
-      Icon:  <Users  size={24} />,
-      link: "/services/peer-review",
-      desc:"Peer review is a critical process in academic and professional fields, ensuring the integrity and quality of work before publication or implementation. It involves experts evaluating the work of their peers to verify accuracy, relevance, and originality. This scrutiny helps prevent the dissemination of flawed research, enhances the credibility of findings, and promotes continuous improvement in various disciplines. In construction, peer review assesses project designs, compliance with standards, and overall project feasibility, safeguarding against potential failures and ensuring project success."
-    },
-    {
-      name: 'Building Envelope Assessment',
-      role: 'BEA',
-      Icon:  <Users  size={24} />,
-      link: "/services/building-envelope-assessment",
-      desc:"Building Envelope Assessment is a crucial evaluation of a building's exterior elements—walls, roofs, windows, and foundations—to ensure they effectively protect against environmental factors. This assessment identifies weaknesses in the structure that may lead to energy loss, moisture intrusion, and reduced indoor comfort. By diagnosing issues such as insulation failures and air leaks, the assessment helps in enhancing building sustainability, improving energy efficiency, and ensuring long-term durability. It's essential for maintaining optimal building performance and occupant comfort."
-    },
-    {
-      name: 'Litigation',
-      role: 'LIT',
-      Icon:  <Scale  size={24} />,
-      link: "/services/litigation",
-      desc:"Litigation according to ASTM E2018 involves legal processes tied to property condition assessments, particularly when discrepancies arise after a transaction. This standard guides how assessments should be performed, ensuring thorough documentation and inspection of a property's physical condition. When parties dispute over undisclosed or overlooked defects, ASTM E2018 standards help define the due diligence required by the assessor. Adhering to these standards can mitigate risks, provide clarity in legal disputes, and establish a framework for resolving conflicts related to property conditions."
-    },
-    {
-      name: 'Causation',
-      role: 'CAU',
-      Icon:  <ShieldQuestion  size={24} />,
-      link: "/services/causation",
-      desc:"Causation analysis according to ASTM E2018-15 involves a thorough investigation to identify the underlying reasons for deficiencies or failures in property conditions. This standard guides evaluators in systematically examining building components to trace back the root causes of observed issues. The process is crucial for property condition assessments, helping to pinpoint specific causes of defects, ensuring that remedial actions are accurately targeted, and preventing future occurrences. Causation analysis is vital for maintaining property integrity and value, providing a clear basis for repair strategies and legal documentation."
-    },
-    {
-      name: 'Budget Review',
-      role: 'BR',
-      Icon:  <HandCoins  size={24} />,
-      link: "/services/budget-review",
-      desc:"A Budget Review according to ASTM E2018 standards involves a meticulous evaluation of a project’s budget to ensure accuracy, compliance, and efficiency in financial planning. This review scrutinizes estimated costs, funding allocations, and expenditure tracking against ASTM guidelines, aiming to identify discrepancies and opportunities for cost optimization. It helps stakeholders make informed decisions, prevent cost overruns, and enhance project outcomes. The process supports strategic planning and risk management, aligning project execution with financial forecasts and ensuring adherence to industry standards."
-    },
-    {
-      name: 'Annual Inspection',
-      role: 'AI',
-      Icon:  <RotateCw  size={24} />,
-      link: "/services/annual-inspection",
-      desc:"Annual inspections, as outlined in ASTM E2018, are crucial for maintaining building integrity and safety. These inspections involve a systematic review of a property’s structural, mechanical, and electrical systems to identify any deteriorations or defects that may compromise building performance or safety. Conducted by qualified professionals, these inspections help ensure compliance with building codes and industry standards, facilitating proactive maintenance strategies to mitigate risks, prevent costly repairs, and extend the lifespan of property assets, thus protecting investment and ensuring operational continuity."
-    },
-    
-
-    
-    
-    
-    
-    
    
   ]
   

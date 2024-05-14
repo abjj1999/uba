@@ -51,8 +51,8 @@ export default function Form() {
     }
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID ?? "", process.env.NEXT_PUBLIC_SERVICE_TEMPLATE_ID ?? "", form.current, {
-        publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLIC_K ?? "",
+        process.env.SERVICE_ID ?? "", process.env.SERVICE_TEMPLATE_ID ?? "", form.current, {
+        publicKey: process.env.EMAIL_PUBLIC_KEY ?? "",
       })
       .then(
         () => {
@@ -87,9 +87,9 @@ export default function Form() {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Our Team</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          We are here to help you with any questions you may have. Reach out to us and we will get back to you as soon as possible.
         </p>
       </div>
       <form action="#" ref={form} onSubmit={sendEmail} className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -103,6 +103,7 @@ export default function Form() {
                 type="text"
                 name="first_name"
                 id="first-name"
+                placeholder='John'
                 value={first}
                 onChange={(e) => setFirst(e.target.value)}
                 autoComplete="given-name"
@@ -119,6 +120,7 @@ export default function Form() {
                 type="text"
                 name="last_name"
                 id="last-name"
+                placeholder='Doe'
                 value={last}  
                 onChange={(e) => setLast(e.target.value)}
                 autoComplete="family-name"
@@ -135,6 +137,7 @@ export default function Form() {
                 type="text"
                 name="company"
                 id="company"
+                placeholder='Company name'
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
                 autoComplete="organization"
@@ -151,6 +154,7 @@ export default function Form() {
                 type="email"
                 name="email"
                 id="email"
+                placeholder='example@gmail.com'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 autoComplete="email"
@@ -163,32 +167,16 @@ export default function Form() {
               Phone number
             </label>
             <div className="relative mt-2.5">
-              <div className="absolute inset-y-0 left-0 flex items-center">
-                <label htmlFor="country" className="sr-only">
-                  Country
-                </label>
-                <select
-                  id="country"
-                  name="country"
-                  className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-                >
-                  <option>US</option>
-                  <option>CA</option>
-                  <option>EU</option>
-                </select>
-                <ChevronDown
-                  className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                  aria-hidden="true"
-                />
-              </div>
+              
               <input
                 type="tel"
                 name="number"
                 id="phone-number"
+                placeholder='(123) 456-7890'
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 autoComplete="tel"
-                className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2  text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -201,10 +189,11 @@ export default function Form() {
                 name="message"
                 id="message"
                 value={message}
+                placeholder='Your message here...'
                 onChange={(e) => setMessage(e.target.value)}
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
+                
               />
             </div>
           </div>

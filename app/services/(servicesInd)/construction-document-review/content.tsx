@@ -32,11 +32,7 @@ export default function Content() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
-              <p className="">
-                <strong> Compliance Verification: </strong>  We ensure all documents strictly adhere to ASTM E2018-15 standards, as well as local and international regulations.<br />
-                <strong> Risk Mitigation: </strong>  Early identification of conflicts or missing information to prevent project delays and legal issues.<br />
-                <strong> Quality Assurance:</strong> Our reviews confirm that all project specifications and requirements are met with precision.
-              </p>
+             
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <Separator />
                 <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl ">

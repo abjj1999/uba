@@ -32,11 +32,7 @@ export default function Content() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
-              <p className="">
-                <strong> Effective Coordination: </strong>  We manage all project stakeholders, ensuring clear communication and coordinated efforts across all phases of construction.<br />
-                <strong> Documentation Control: </strong>  Rigorous management of construction documents, including contracts, drawings, and revisions, to ensure they are up-to-date and accessible.<br />
-                <strong> Quality and Compliance Oversight:</strong> Continuous monitoring of construction activities to ensure compliance with project specifications and industry standards.
-              </p>
+              
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <Separator />
                 <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-3xl ">

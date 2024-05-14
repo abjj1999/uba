@@ -33,12 +33,7 @@ export default function Content() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-800 lg:max-w-lg ">
-              <p className="">
-                <strong> Comprehensive Due Diligence: </strong> We perform exhaustive reviews of historical and current site use to detect any signs of environmental contamination.<br />
-                <strong> Risk Management: </strong>   Our assessments identify environmental risks and liabilities, providing strategies to manage or mitigate them effectively.<br />
-                <strong> Detailed Reporting: </strong> Each ESA concludes with a detailed report that outlines findings, implications, and recommendations for further action.
-
-              </p>
+              
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <Separator />
                 <h1 className="text-3xl my-6 font-bold tracking-tight text-gray-900 sm:text-4xl ">
@@ -46,8 +41,11 @@ export default function Content() {
                 </h1>
                 <Options title="Phase I ESA" content="Reviews past and present activities to identify potential or existing environmental contamination liabilities." />
                 <Options title="Phase II ESA" content="Involves detailed testing of soil, groundwater, and building materials to confirm the presence of hazardous substances." />
-                <Options title="Phase III ESA" content="Focuses on the remediation of confirmed contamination, detailing the scope, regulatory requirements, and cleanup plans." />
-                <Options title="Transaction Screen" content=" A less detailed check used for lower-risk properties to quickly identify obvious signs of environmental concerns." />
+                <Options title="Contamination Assessment" content="Contamination Assessment refers to the evaluation of potential environmental contamination at a property. This assessment is conducted to identify any existing or potential contamination issues that could affect the property&apos;s condition or value." />
+                <Options title="Vapor intrusion Survey" content="A Vapor Intrusion Survey under ASTM E2018-15 evaluates the risk of hazardous vapors entering a building from subsurface contamination, ensuring indoor air quality and occupant safety." />
+                <Options title="Tank closure Assessment" content="A Tank Closure Assessment under ASTM E2018-15 evaluates the proper decommissioning of storage tanks, ensuring no environmental contamination remains. This assessment includes site inspections, soil and groundwater testing, and verifying regulatory compliance for safe closure​" />
+                <Options title="Remedial Action Plans" content="" />
+                <Options title="Sampling and monitoring" content="" />
               </ul>
             </div>
           </div>

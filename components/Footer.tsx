@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900">
+    <footer className="bg-black dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -16,17 +16,17 @@ const Footer = () => {
                 className="h-8 me-3"
                 alt="FlowBite Logo"
               /> */}
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl text-gray-100 font-semibold whitespace-nowrap dark:text-white">
                 74 Degree
               </span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white">
                 Resources
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-200 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="" className="hover:underline">
                     Link 1
@@ -43,10 +43,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white">
                 Follow us
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-200 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                  <Link href="https://www.linkedin.com/company/74-degree/">
                   <p className="hover:underline">
@@ -71,10 +71,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-white">
                 Legal
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-200 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <Link href="#" className="hover:underline">
                     Privacy Policy
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-gray-200 sm:text-center dark:text-gray-400">
             © 2023{" "}
             <Link href="" className="hover:underline">
               74 Degree™
@@ -103,21 +103,21 @@ const Footer = () => {
 
             {/* <Link
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-200 hover:text-gray-100 dark:hover:text-white"
             >
               <FaFacebookF className="w-4 h-4" />
             </Link>
             
             <Link
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              className="text-gray-200 hover:text-gray-100 dark:hover:text-white ms-5"
             >
               <FaXTwitter className="w-4 h-4" />
             </Link> */}
 
             <Link
               href="https://www.linkedin.com/company/74-degree/"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              className="text-gray-200 hover:text-gray-100 dark:hover:text-white ms-5"
             >
               <FaLinkedinIn className="w-4 h-4" />
             </Link>

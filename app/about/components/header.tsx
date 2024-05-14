@@ -12,7 +12,7 @@ const About1 = () => {
                 <div className="w-full lg:w-5/12 flex flex-col justify-center mb-6">
                     <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-100 pb-4">About Us</h1>
                     <p className="font-normal text-base leading-6 text-gray-300 ">
-                    Welcome to 74 Degree, your trusted engineering partner based in the vibrant heart of Houston, Texas. Founded in 2023, we are a dynamic engineering firm dedicated to providing a wide array of specialized services. Our expertise spans across Property Condition Assessments (PCA), Mechanical, Electrical, and Plumbing (MEP) systems, Environmental Site Assessments (ESA), and many other critical engineering disciplines.
+                    Welcome to 74 Degree, your trusted engineering partner based in the vibrant heart of Houston, Texas. Founded in 2022, we are a dynamic engineering firm dedicated to providing a wide array of specialized services. Our expertise spans across Property Condition Assessments (PCA), Mechanical, Electrical, and Plumbing (MEP) systems, Environmental Site Assessments (ESA), and many other critical engineering disciplines.
                     </p>
                     <br />
                     <p className="font-normal text-base leading-6 text-gray-300">

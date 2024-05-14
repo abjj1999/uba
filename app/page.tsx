@@ -1,15 +1,15 @@
 import Card from "@/components/Card";
 import Hero from "@/components/Hero";
-import NewLetter from "@/components/NewsLetter";
-import Testimonial from "@/components/Test";
-import Trusted from "@/components/Trusted";
-// import TypingEffect from "@/components/TypingEffect";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { PhoneForwarded } from "lucide-react";
 
-import Image from "next/image";
-import Link from "next/link";
+import Testimonial from "@/components/Test";
+import { Separator } from "@/components/ui/separator";
+import { Metadata } from 'next'
+import Form from "./contact/components/form";
+
+export const metadata: Metadata = {
+  title: 'Home | 74 Degree ',
+  description: '74 Degree LLC is an engineering firm that specializes in PCA, ESA, MEP, and more. We are a team of professionals that are dedicated to providing the best service to our clients.',
+}
 
 export default function Home() {
   return (
@@ -18,14 +18,17 @@ export default function Home() {
 
       <Separator />
       <Testimonial />
+      <Separator />
       {/* <Trusted /> */}
-
       <div className="flex flex-col items-center">
       <Card title="" description="" image="/images/card.jpg" />
 
       </div>
+      <Form />
+      <Separator />
 
-      <NewLetter />
+      {/* <NewLetter /> */}
+      {/* contact us quick form */}
 
       
 

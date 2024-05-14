@@ -25,7 +25,7 @@ const Reachout = () => {
               href="mailto:"
               className="text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
             >
-              test.test.test@
+              info@74degree.com
             </a>
           </p>
           <Separator />

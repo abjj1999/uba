@@ -9,10 +9,10 @@ const links = [
     { name: 'service 4', href: '#' },
   ]
   const stats = [
-    { name: 'stat 1', value: '100' },
-    { name: 'stat 2', value: '100' },
-    { name: 'stat 3', value: '200' },
-    { name: 'stat 4', value: '300' },
+    { name: 'Projects', value: '+600' },
+    { name: 'Experiance', value: '+25 years' },
+    { name: 'Client', value: '+50 served' },
+    { name: 'States', value: '50 States' },
   ]
 
 const Header = () => {
