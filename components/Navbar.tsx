@@ -10,6 +10,8 @@ import {
 } from "framer-motion";
 import { Button, buttonVariants } from "./ui/button";
 import Link from "next/link";
+import Image from "next/image";
+import { Icons } from "./Icon";
 
 const Navbar = () => {
   return (
@@ -52,10 +54,9 @@ const FlyoutNav = () => {
 const Logo = ({ color = "white" }: { color?: string }) => {
   // Temp logo from https://logoipsum.com/
   return (
-    <Link href="/"  className="flex items-center gap-2">
-      <span className="text-2xl font-bold" style={{ color }}>
-        74 Degree
-      </span>
+    <Link href="/"  className="flex items-center mt-0 mr-auto">
+      <Icons.logo className="h-8 w-8"/>
+      {/* <Image src="/images/74.png" alt="74 degree LLC" fill/> */}
       
     </Link >
   );

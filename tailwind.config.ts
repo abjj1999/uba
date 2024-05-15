@@ -10,6 +10,9 @@ const config = {
 	],
   prefix: "",
   theme: {
+    fontFamily:{
+      "display": ["Helvetica"],
+    },
     container: {
       center: true,
       padding: "2rem",

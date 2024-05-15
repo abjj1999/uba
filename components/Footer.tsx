@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Icons } from "./Icon";
 
 
 const Footer = () => {
@@ -16,9 +17,7 @@ const Footer = () => {
                 className="h-8 me-3"
                 alt="FlowBite Logo"
               /> */}
-              <span className="self-center text-2xl text-gray-100 font-semibold whitespace-nowrap dark:text-white">
-                74 Degree
-              </span>
+              <Icons.logo />
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
