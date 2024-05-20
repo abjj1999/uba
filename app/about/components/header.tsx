@@ -16,8 +16,7 @@ const About1 = () => {
                     </p>
                     <br />
                     <p className="font-normal text-base leading-6 text-gray-300">
-                    At 74 Degree, we are committed to delivering excellence and innovation in every project. We leverage the latest technology and apply rigorous industry standards to ensure our solutions not only meet but exceed our clients’ expectations. Our team of experienced engineers and professionals is passionate about tackling diverse engineering challenges and providing tailored solutions that address the unique needs of each project.
-                    </p>
+                    With decades of combined experience, 74 DEGREE has established a solid reputation for excellence in the engineering industry. Our team comprises seasoned professionals who bring a wealth of knowledge and expertise to every project. Over the years, we have completed numerous projects across various sectors, from residential and commercial developments to industrial and infrastructure projects. Our extensive experience enables us to tackle complex challenges with confidence and precision, ensuring that our clients receive the highest quality service and innovative solutions. We pride ourselves on our ability to deliver results that not only meet but exceed expectations, driven by our commitment to continuous learning and improvement in the ever-evolving engineering landscape.                    </p>
                 </div>
                 <div className="w-full lg:w-8/12 ">
                     <Image width="2000" height="1000" className="w-full h-full" src="/images/houston.jpg" alt="A group of People" />

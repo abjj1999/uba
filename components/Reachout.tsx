@@ -28,7 +28,7 @@ const Reachout = () => {
               info@74degree.com
             </a>
           </p>
-          <Separator />
+          {/* <Separator /> */}
           <p className="my-4 font-semibold text-gray-300">
              Fill out our contact form and we will get back to you as soon as
             possible.
@@ -40,6 +40,15 @@ const Reachout = () => {
           >
             <Button className="bg-gary-700 text-white" variant="outline">
               Contact Us
+              <ChevronRight />
+            </Button>
+          </Link>
+          <Link
+            href="/request-quote"
+            className="inline-flex mx-5 items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
+          >
+            <Button className=" text-gray-100" variant="destructive">
+              Request a Quote
               <ChevronRight />
             </Button>
           </Link>

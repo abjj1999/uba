@@ -376,7 +376,7 @@ const LINKS = [
 
   {
     text: "Projects",
-    href: "#",
+    href: "/projects",
   },
   {
     text: "Contact",
