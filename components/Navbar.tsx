@@ -148,12 +148,12 @@ const CTAs = () => {
 
 const AboutUsContent = () => {
   return (
-    <div className="grid h-fit w-full grid-cols-12 shadow-xl lg:h-72 lg:w-[600px] lg:shadow-none xl:w-[750px]">
-      <div className="col-span-12 flex flex-col justify-between bg-neutral-950 p-6 lg:col-span-4">
+    <div className="grid h-fit w-full grid-cols-4 shadow-xl lg:h-72 lg:w-[300px] lg:shadow-none xl:w-[400px]">
+      <div className="col-span-12 flex flex-col justify-between bg-neutral-950 p-6 ">
         <div>
           <h2 className="mb-2 text-xl font-semibold text-white">About us</h2>
           <p className="mb-6 max-w-xs text-sm text-neutral-400">
-            Placeholder is the world&apos;s leading placeholder company.
+          74 Degree, founded in 2022 in Houston, Texas, offers specialized engineering services including PCA, MEP systems, and ESA. Our experienced team delivers innovative, high-quality solutions across various sectors, exceeding client expectations through continuous improvement and expertise.
           </p>
         </div>
         <Link
@@ -163,7 +163,7 @@ const AboutUsContent = () => {
           Learn more <FiArrowRight />
         </Link>
       </div>
-      <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-white p-6 lg:col-span-8">
+      {/* <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-white p-6 lg:col-span-8">
         <Link
           href="/about/features"
           className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100"
@@ -192,7 +192,7 @@ const AboutUsContent = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quam?
           </p>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };Link

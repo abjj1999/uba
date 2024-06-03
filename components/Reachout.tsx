@@ -6,20 +6,21 @@ import { Button } from "./ui/button";
 const Reachout = () => {
   return (
     <section className="bg-gary-800 dark:bg-gray-900">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+      <div className="py-8 px-4  max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="text-center text-gray-500 sm:text-lg dark:text-gray-400">
           <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-300 dark:text-white">
             Reach out to us
           </h2>
-          <p className="mb-4 font-medium text-gray-400">
+          <p className="mb-4 font-medium text-gray-400 text-center">
             We are here to help you with your business needs. Our team is ready
             to answer your questions and provide the assistance you need. Get in
             touch with us today.
           </p>
-          <p className="mb-4 font-medium flex gap-4 text-gray-300">
-            <Phone /> +1 (123) 456-7890
-          </p>
-          <p className="mb-4 font-medium flex gap-4 text-gray-300">
+            <Link href="tel:+13466312041" className="flex font-medium gap-4 text-gray-300 mb-4 items-center justify-center">
+            <Phone /> +1 (346) 631-2041 
+            </Link>
+         
+          <p className="mb-4 font-medium flex gap-4 text-gray-300 items-center justify-center">
             <Mail />
             <a
               href="mailto:"

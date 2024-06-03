@@ -8,8 +8,8 @@ import React from "react";
 const About1 = () => {
     return (
         <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-            <div className="flex flex-col lg:flex-row justify-between gap-8 mt-5">
-                <div className="w-full lg:w-5/12 flex flex-col justify-center mb-6">
+            <div className="flex flex-col lg:flex-row justify-between gap-8 mt-5 pt-10">
+                <div className="w-full lg:w-5/12 flex flex-col justify-center mb-6 ">
                     <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-100 pb-4">About Us</h1>
                     <p className="font-normal text-base leading-6 text-gray-300 ">
                     Welcome to 74 Degree, your trusted engineering partner based in the vibrant heart of Houston, Texas. Founded in 2022, we are a dynamic engineering firm dedicated to providing a wide array of specialized services. Our expertise spans across Property Condition Assessments (PCA), Mechanical, Electrical, and Plumbing (MEP) systems, Environmental Site Assessments (ESA), and many other critical engineering disciplines.
