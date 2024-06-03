@@ -4,6 +4,7 @@ import "./globals.css";
 import AdvancedNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster"
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Footer />
         </div>
         <Toaster />
+        <Analytics />
         </body>
     </html>
   );
