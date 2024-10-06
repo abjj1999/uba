@@ -31,11 +31,11 @@ const Hero = () => {
               
             </Link>
             <Link
-              href="/about"
+              href="/contact"
               className=" text-sm font-semibold text-black "
             >
               <Button className="text-white gap-2" variant="ghost">
-                Learn more <ArrowRight className="w-4 h-4" />
+                Contact Us <ArrowRight className="w-4 h-4" />
               </Button>
               
             </Link>

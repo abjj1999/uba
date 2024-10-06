@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Form from "./components/form";
 import CHeader from "./components/header";
+import Addresses from "@/components/address";
 
 
 
@@ -14,6 +15,7 @@ const ContactPage = () => {
         <div className="">
             <CHeader />
             <Form />
+            <Addresses />
         </div>
      );
 }

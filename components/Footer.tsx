@@ -47,7 +47,7 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-200 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                 <Link href="https://www.linkedin.com/company/74-degree/">
+                 <Link href="https://www.linkedin.com/company/74-degree-inc/">
                   <p className="hover:underline">
                     LinkedIn
                   </p>
@@ -115,7 +115,7 @@ const Footer = () => {
             </Link> */}
 
             <Link
-              href="https://www.linkedin.com/company/74-degree/"
+              href="https://www.linkedin.com/company/74-degree-inc/"
               className="text-gray-200 hover:text-gray-100 dark:hover:text-white ms-5"
             >
               <FaLinkedinIn className="w-4 h-4" />

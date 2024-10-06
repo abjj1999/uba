@@ -5,6 +5,7 @@ import Testimonial from "@/components/Test";
 import { Separator } from "@/components/ui/separator";
 import { Metadata } from 'next'
 import Form from "./contact/components/form";
+import Reachout from "@/components/Reachout";
 
 export const metadata: Metadata = {
   title: 'Home | 74 Degree ',
@@ -20,12 +21,12 @@ export default function Home() {
       <Testimonial />
       <Separator />
       {/* <Trusted /> */}
-      <div className="flex flex-col items-center">
-      <Card title="" description="" image="/images/card.jpg" />
-
-      </div>
       <Form />
       <Separator />
+      <div className="flex flex-col items-center border-black ">
+      {/* <Card title="" description="" image="/images/card.jpg" /> */}
+        <Reachout />
+      </div>
 
       {/* <NewLetter /> */}
       {/* contact us quick form */}
